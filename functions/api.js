@@ -4,5 +4,5 @@ export async function fetchJSON(url, options = {}) {
     if ('r.ok') {
         return r.json()
     }
-    throw new Error('Erreur serveur', {cause : r})
+    throw new Error('Erreur serveur', {cause: r})
 }
